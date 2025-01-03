@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+Interactive Resume Application (React, Node.js, MySQL)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Overview
 
-## Available Scripts
+This project is an interactive Resume Application built to showcase my personal resume in a dynamic and modern web format. Users can explore my skills, projects, education, experience, and more. The app is built using React for the frontend, Node.js and Express for the backend, and MySQL for data management.
 
-In the project directory, you can run:
+Key Technologies: React, Node.js, Express, MySQL, Google OAuth, AI Chatbot Integration, Live Weather API, News Feed API
 
-### `npm start`
+Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Frontend
+React-based User Interface: Built with React to create a dynamic, smooth user experience.
+Responsive Design: Fully responsive layout to display the resume on various devices.
+Dynamic Theme: Toggle between light and dark modes.
+Interactive Sections: Each section (skills, experience, projects) can be expanded and viewed interactively.
+Live Updates: Displays live weather data and real-time news headlines.
+Time-Based Greetings: Personalized greetings based on the time of day (e.g., "Good Morning").
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Backend
+Node.js & Express: Used to manage API endpoints for dynamic data and resume sections.
+Google OAuth Authentication: Secure sign-in for users to access personalized data or edit sections.
+CRUD Operations: Full functionality for creating, editing, and deleting sections of the resume.
 
-### `npm test`
+Database
+MySQL: Data for storing user details, education, work experience, and projects.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Additional Features
+AI Chatbot: Provides real-time help and assistance in finding specific information or answering questions about the resume.
+Live Weather Updates: Shows weather information dynamically based on the user's location or preferences.
+News Feed: Displays live news updates relevant to the user's interests.
 
-### `npm run build`
+Getting Started
+Frontend Setup
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/shivas1432/final_project_FE.git
+cd resume/frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install the dependencies:
+bash
+Copy code
+npm install
+Start the React app:
+bash
+Copy code
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Visit the app at http://localhost:3000 to see your interactive resume in action.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Backend Setup
+Navigate to the backend folder:
+bash
+Copy code
+cd resume/backend
 
-### `npm run eject`
+Install the required dependencies:
+bash
+Copy code
+npm install
+Set up your .env file with the necessary environment variables (such as database credentials, Google OAuth credentials, etc.).
+Start the Node.js server:
+bash
+Copy code
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+App Features
+Personalized Resume: Shows detailed sections about your skills, work experience, education, and projects.
+Dynamic Sections: Click to expand or collapse detailed information for each section.
+Live Data Integration:
+Real-time weather updates based on the user's location.
+Display news feed related to your areas of interest.
+User Authentication: Users can sign in with Google OAuth to edit or interact with certain sections of the resume (if allowed).
+Technologies Used
+Frontend: React, CSS Modules, Axios, React Router
+Backend: Node.js, Express, Google OAuth, MySQL, Sequelize ORM
+APIs: OpenWeather API (for weather updates), NewsAPI (for news feed)
+Other: Socket.io (for live updates), AI Chatbot API
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+How to Contribute
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Feel free to fork this repository and make any improvements. To contribute:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Fork the repository to your GitHub account.
+Create a new branch for your feature: git checkout -b feature-branch.
+Make your changes and commit them: git commit -m "Describe your change".
+Push to your branch: git push origin feature-branch.
+Create a pull request to submit your changes for review.
