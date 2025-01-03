@@ -1,0 +1,101 @@
+/* src/css/EditReference.css */
+
+.edit-reference {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: auto; /* Center the edit reference section */
+    width: 100%;  /* Full width */
+    max-width: 450px; /* Set a max width for better appearance */
+  
+}
+
+.reference-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Max width for the form */
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+    width: 100%; /* Ensure inputs take full width */
+}
+
+input:focus {
+    border: 1px solid #007bff;
+}
+
+.upload-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.upload-input {
+    display: none;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.upload-label:hover {
+    background-color: #0056b3;
+}
+
+.submit-button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%; /* Full width */
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+.status-message {
+    margin-top: 20px;
+    color: green;
+}
+
+.image-preview {
+    margin: 10px 0; /* Add margin for spacing */
+    max-width: 100%; /* Responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+.delete-button {
+    padding: 10px;
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%; /* Full width */
+    margin-top: 10px; /* Space above the button */
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}

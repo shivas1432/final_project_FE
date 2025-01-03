@@ -1,0 +1,120 @@
+/* General Chat Popup Styling */
+.ai-chat-box-popup {
+    position: fixed;
+    top: 90px;
+    left: 30%;
+    width: 650px;
+    max-height: 600px;
+    background-color: #faf9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .ai-chat-box-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ai-chat-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .ai-chat-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .ai-chat-history {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px 0;
+    max-height: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .ai-chat-message {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: flex-start;
+  }
+  
+  .ai-chat-avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .ai-chat-text {
+    background-color: #0d0c0c;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+  }
+  
+  .user-message .ai-chat-text {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-end;
+  }
+  
+  .ai-message .ai-chat-text {
+    background-color: #413d3d;
+  }
+  
+  .error-message .ai-chat-text {
+    background-color: #ff6666;
+    color: #fff;
+  }
+  
+  .ai-chat-loading {
+    text-align: center;
+    font-style: italic;
+    color: #873b3b;
+  }
+  
+  .ai-chat-textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+  }
+  
+  .ai-chat-submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ai-chat-submit-btn:disabled {
+    background-color: #ccc;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

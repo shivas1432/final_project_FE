@@ -1,0 +1,49 @@
+/* src/css/Sidebar.css */
+.popup-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Start off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    z-index: 1000; /* Make sure it's above other elements */
+  }
+  
+  .popup-menu.open {
+    right: 0; /* Slide in */
+  }
+  
+  .popup-menu a {
+    display: block;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .popup-menu .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Floating Icon CSS */
+  .floating-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  /* Add additional styling as needed */
+  

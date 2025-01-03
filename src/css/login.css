@@ -1,0 +1,122 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Full viewport height */
+    background-color: #afc1d3; /* Light background color */
+    margin: 10% 10% 10%; /* Set left, right, and bottom margin to 10% */
+    margin-top: 3%; 
+}
+/* Styling for the home link */
+.home {
+    position: absolute;
+    top: 20px; /* Position at the top */
+    left: 20px; /* Align to the left */
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+    display: flex;
+    align-items: center; /* Center icon and text */
+    font-weight: bold; /* Bold text */
+}
+
+.home .icon {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Header styles */
+h2 {
+    margin-bottom: 20px; /* Space below heading */
+    color: #333; /* Darker text color for contrast */
+}
+
+/* Alert styles */
+.alert {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    padding: 10px;
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below alert */
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+    width: 100%; /* Full width */
+}
+
+/* Input field styles */
+.form-control {
+    padding: 10px;
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+/* Focus effect on input fields */
+.form-control:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Box shadow for focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    color: white;
+    background-color: #007bff; /* Bootstrap primary color */
+    cursor: pointer;
+    margin-top: 10px; /* Space above button */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition effects for 3D effect */
+}
+
+/* Button hover effect */
+.btn:hover {
+    transform: translateY(-2px); /* Raise button on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Google Login button styles */
+.google-button {
+    background-color: #db4437; /* Google red */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px; /* Rounded corners */
+    margin-top: 15px; /* Space above button */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transition effects for 3D effect */
+    border: none; /* Remove border */
+}
+
+/* Google Login button hover effect */
+.google-button:hover {
+    transform: translateY(-2px); /* Raise button on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Link styles */
+a {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.2s; /* Transition effects for link */
+}
+
+/* Link hover effect */
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Additional styles for registration link */
+.mt-3 {
+    margin-top: 15px; /* Space above */
+    color: #666; /* Grey text for secondary information */
+}
+
+/* Styling for the section about Google login */
+h3 {
+    margin-top: 30px; /* Space above */
+    color: #333; /* Darker text color */
+}

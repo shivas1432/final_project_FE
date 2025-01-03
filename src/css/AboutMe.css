@@ -1,0 +1,187 @@
+/* General Styling */
+.about-me {
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Brief Container */
+.brief-container {
+  display: flex;
+  width: 100%;
+  height: 550px; /* Flexible height for responsiveness */
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures image and content fit within boundaries */
+  
+}
+
+.brief-content {
+  flex: 1;
+  min-width: 300px; /* Ensures layout integrity on small screens */
+  padding: 30px;
+  border-radius: 10px 0 0 10px;
+}
+
+.brief-content h2 {
+  font-size: 2rem;
+  color: #0056b3;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.brief-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.brief-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: justify; /* Aligns text for readability */
+  line-height: 1.6;
+}
+
+.brief-content h4 {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #444;
+}
+
+/* Image Container */
+.image-container {
+  width: 30%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.image-container img:hover {
+  transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+/* Map and Details Container */
+.map-details-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.map-container {
+  flex: 2; /* Takes more space */
+  min-width: 300px; /* Ensures responsiveness */
+  height: 400px; /* Default height for map */
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
+}
+
+.details-container {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f1f1f1;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.details-container p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: start;
+}
+
+/* Locations Button Container */
+.locations {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Ensures the buttons wrap on smaller screens */
+  justify-content: center; /* Center aligns the buttons */
+  margin-top: 20px;
+}
+
+.location-button {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-button:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.location-button button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.location-button button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .brief-container {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    height: auto; /* Adjust height to content */
+  }
+
+  .brief-content {
+    border-radius: 10px; /* Remove left-side border radius for stacked layout */
+    text-align: center; /* Center-align content */
+  }
+
+  .image-container {
+    max-width: 100%; /* Allow image to take full width */
+    height: auto; /* Auto-adjust height */
+    border-radius: 10px; /* Uniform border-radius */
+  }
+
+  .map-details-container {
+   
+    height: auto; /* Adjust height */
+  }
+
+  .map-container {
+    height: 300px; /* Smaller map height */
+   
+  }
+
+  
+}

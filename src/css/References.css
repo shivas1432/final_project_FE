@@ -1,0 +1,96 @@
+.references {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+  
+  .reference-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+  }
+  
+  input:focus {
+    border: 1px solid #007bff;
+  }
+  
+  .upload-container {
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .upload-input {
+    display: none;
+  }
+  
+  .upload-label {
+    display: inline-block;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .upload-label:hover {
+    background-color: #0056b3;
+  }
+  
+  .submit-button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+  }
+  
+  .status-message {
+    margin-top: 20px;
+    color: green;
+  }
+  /* References.css */
+.image-preview {
+  margin: 10px 0; /* Add margin for spacing */
+}
+
+.reference-image {
+  max-width: 150px; /* Set a max width for the image */
+  max-height: 150px; /* Set a max height for the image */
+  border-radius: 5px; /* Optional: Add border-radius */
+}
+/* src/css/References.css */
+
+.back-button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-bottom: 20px; /* Space below the button */
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}

@@ -1,0 +1,135 @@
+/* Main container for news content */
+.news-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Button to toggle news visibility */
+.btn-toggle {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px; /* Space between button and news section */
+}
+
+.btn-toggle:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Section container for news articles */
+.news-section {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background: #fff;
+    margin-top: 10px; /* Space above the news section */
+    position: relative; /* Required for positioning the close button */
+}
+
+/* Close button styles */
+.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px; /* Size of the close button */
+    color: #ff0000; /* Red color for the close button */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.btn-close:hover {
+    color: #cc0000; /* Darker red on hover */
+}
+
+/* Grid layout for news articles */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+}
+
+/* Individual news article card styles */
+.news-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation effect */
+    position: relative;
+    overflow: hidden; /* For the pseudo-element */
+}
+
+/* Hover effects for news cards */
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styles for news articles */
+.news-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Description styles for news articles */
+.news-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Link styles for read more */
+.news-card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+}
+
+.news-card a:hover {
+    text-decoration: underline;
+}
+
+/* Style for article images */
+.article-image {
+    width: 100%; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 5px; /* Rounding corners of images */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+/* Close button for navigation */
+.close-button {
+    background: transparent;
+    border: none;
+    font-size: 24px; /* Adjust size as needed */
+    cursor: pointer;
+    position: absolute; /* Position it in the top corner */
+    top: 90px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .news-card h2 {
+        font-size: 1.25rem; /* Smaller title size for mobile */
+    }
+
+    .news-card p {
+        font-size: 0.9rem; /* Smaller text size for mobile */
+    }
+
+    .btn-toggle {
+        font-size: 0.9rem; /* Smaller button size for mobile */
+    }
+}

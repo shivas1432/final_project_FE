@@ -1,0 +1,222 @@
+/* Main wrapper for all project sections */
+.projects-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px; /* Space between frontend and backend sections */
+  padding: 20px; /* Optional padding for outer spacing */
+}
+
+/* Section title styling */
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Common project wrapper styling for both frontend and backend */
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between project cards */
+  width: 100%;
+  
+}
+
+/* Frontend projects container specific styling */
+.frontend-projects {
+  background-color: #e6f7ff; /* Light blue background for frontend section */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  width: 100%;
+}
+
+/* Backend projects container specific styling */
+.backend-projects {
+  background-color: #f2e6ff; /* Light purple background for backend section */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  width: 100%;
+}
+
+/* Individual project container */
+.project-container {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect on project container */
+.project-container:hover {
+  transform: scale(1.05);
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Project title */
+.project-container h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+/* Programming languages text */
+.project-container p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #666;
+  text-align: center;
+}
+
+/* Project description styling */
+.description {
+  font-size: 13px;
+  color: #555;
+  text-align: justify;
+}
+
+/* Preview image */
+.preview-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.preview-image:hover {
+  transform: scale(1.02);
+}
+
+/* Preview button styling */
+.preview-button {
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.preview-button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+/* Ensure modal is full-screen and overlays properly */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  backdrop-filter: blur(8px); /* Blur effect on the background */
+  transition: opacity 0.3s ease; /* Smooth open/close animation */
+  overflow: hidden; /* Prevent scrolling of the body when the modal is open */
+}
+
+/* Modal content styling with full-screen dimensions */
+.modal-content {
+  z-index: 1010;
+  position: relative;
+  pointer-events: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;  /* Adjust width to be 80% of the screen */
+  max-width: 900px;  /* Limit max-width */
+  height: 100%; /* Adjust height to 80% of the screen */
+  max-height: 100%; /* Max height to prevent overflow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;  /* Allow scrolling if content overflows */
+  position: relative;
+}
+
+/* Modal content (image or iframe) styling */
+.modal-content iframe {
+  width: 100%;
+  height: 100%;  /* Video will take up 70% of the modal height */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Close button styling */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the close button */
+  padding: 5px 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.close:hover {
+  background-color: rgba(255, 0, 0, 0.8); /* Red color when hovering */
+}
+
+/* Modal description styling */
+.modal-description {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  margin-top: 10px;
+  word-wrap: break-word;
+  overflow: auto;
+  max-height: 20%;  /* Ensure the description takes up less space */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-container {
+    width: calc(50% - 20px);
+  }
+
+  .modal-content {
+    width: 90%;  /* Adjust width for smaller screens */
+    height: 90%; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .project-container {
+    width: calc(100% - 20px);
+  }
+
+  .modal-content {
+    width: 100%;  /* Adjust width for very small screens */
+    height: auto;  /* Adjust height */
+  }
+}

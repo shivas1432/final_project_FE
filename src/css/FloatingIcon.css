@@ -1,0 +1,13 @@
+/* src/css/FloatingIcon.css */
+.floating-icon {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Adjust the position */
+    right: 20px; /* Adjust the position */
+    z-index: 1000; /* Make sure it's on top */
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Add some transition effect */
+}
+
+.floating-icon:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}

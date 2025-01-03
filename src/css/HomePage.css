@@ -1,0 +1,387 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Home Container */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+}
+
+/* Header Section */
+.home-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.user-greeting {
+  margin: 20px 0;
+}
+
+/* Scroll Container for Full-Screen Sections */
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+/* Full-Screen Section Styling */
+.section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero-left {
+  flex: 7;
+  z-index: 2;
+ 
+}
+
+.hero-right {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-right .video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.hero-right .video-container video {
+  object-fit: cover;
+  width: 400px;
+  height: 550px;
+  z-index: 0; /* Keep video behind overlay */
+  border-radius: 20px;
+}
+
+
+/* Button Styling */
+.btn-dance {
+  position: absolute;  /* Position the button at the bottom of the container */
+  bottom: 20px;        /* 20px from the bottom */
+  left: 50%;           /* Center it horizontally */
+  transform: translateX(-50%); /* Centering the button */
+  padding: 14px 28px;  /* Increase padding for a better click area */
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;  /* Larger font size for better readability */
+  cursor: pointer;
+  z-index: 2;  /* Ensure the button is above the video and overlay */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.btn-dance:hover {
+  background-color: #e04e2b; /* Darken the button on hover */
+}
+
+/* Optional: Make the button more prominent on hover */
+.btn-dance:active {
+  transform: translateX(-50%) scale(0.98); /* Slightly shrink the button on click for effect */
+}
+
+/* Responsive Video Styling for mobile */
+@media (max-width: 768px) {
+  .hero-right .video-container iframe {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .btn-dance {
+    font-size: 14px;  /* Reduce button text size on mobile */
+    padding: 10px 20px; /* Adjust padding for mobile */
+  }
+}
+
+.hero h1,
+.hero p,
+.hero .cta-buttons {
+  margin-bottom: 10px;
+  
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.hero .cta-buttons {
+  display: flex;
+  gap: 20px;
+  margin-left: 400px;
+}
+
+.hero .cta-buttons .btn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  background-color: #ff5722;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero .cta-buttons .btn:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* About Section */
+.about {
+  background-color: #f7f7f7;
+  color: #ece3e3;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: rgba(247, 239, 239, 0.5);
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  flex-wrap: wrap; 
+  color: #ece3e3;
+}
+
+.skills li {
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  border-radius: 20px;
+}
+.skills h3{
+  color: #ece3e3;
+  margin-bottom: 20px;
+}
+
+/* Projects.css */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Space between the containers */
+  margin-bottom: 20px;
+}
+
+.project-item {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ece3e3;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Ensure h3 stays at the bottom */
+  align-items: flex-start; /* Align items to the start horizontally */
+  background-size: cover; /* Make image cover the entire container */
+  background-position: center; /* Center the image */
+  position: relative; /* Needed for placing text over the image */
+  overflow: hidden; /* Hide overflow if image goes beyond container */
+}
+
+.project-item h3 {
+  font-size: 1.5rem;
+  margin: 0; /* Remove margin to position it flush at the bottom */
+  z-index: 2; /* Ensure text stays above the background image */
+  color: white; /* Ensure text is readable on top of the image */
+  position: absolute; /* Position text at the bottom */
+  bottom: 20px;
+  left: 20px;
+}
+
+.project-item p {
+  font-size: 1rem;
+  color: #333; /* Adjust text color to make it visible on the light background */
+}
+
+.project-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+.more-btn {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.more-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+/* Button Styling */
+.btn {
+  background-color: #ff5722;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #e64a19;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Guest Login Styling */
+.guestname {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.guest-access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guest-access button {
+  background-color: #ff5722;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.guest-access button:hover {
+  background-color: #e64a19;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Hero Section Adjustments */
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+   margin-left: 0;
+  }
+
+  /* About Section Adjustments */
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  /* Testimonials Section Adjustments */
+  .testimonials-contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .testimonial {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Guest Access Adjustments */
+  .guestname {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .guest-access button {
+    width: 100%;
+    max-width: 300px;
+  }
+  .hero-right .video-container video {
+    width: 150px;
+    height: 400px;
+  }
+}
