@@ -1,40 +1,41 @@
-# Interactive Resume Application (React, Node.js, MySQL)
+# **Interactive Resume Application (React, Node.js, MySQL)**
 
-## Project Overview
+## **Project Overview**
 
 This project is an interactive Resume Application built to showcase my personal resume in a dynamic and modern web format. Users can explore my skills, projects, education, experience, and more. The app is built using React for the frontend, Node.js and Express for the backend, and MySQL for data management.
 
 Key Technologies: React, Node.js, Express, MySQL, Google OAuth, AI Chatbot Integration, Live Weather API, News Feed API
 
-## Key Features
+## **Key Features**
 
- Frontend
-React-based User Interface: Built with React to create a dynamic, smooth user experience.
-Responsive Design: Fully responsive layout to display the resume on various devices.
-Dynamic Theme: Toggle between light and dark modes.
-Interactive Sections: Each section (skills, experience, projects) can be expanded and viewed interactively.
-Live Updates: Displays live weather data and real-time news headlines.
-Time-Based Greetings: Personalized greetings based on the time of day (e.g., "Good Morning").
+### **Frontend**
+- **React-based User Interface**: Built with React to create a dynamic, smooth user experience.
+- **Responsive Design**: Fully responsive layout to display the resume on various devices.
+- **Dynamic Theme**: Toggle between light and dark modes.
+- **Interactive Sections**: Each section (skills, experience, projects) can be expanded and viewed interactively.
+- **Live Updates**: Displays live weather data and real-time news headlines.
+- **Time-Based Greetings**: Personalized greetings based on the time of day (e.g., "Good Morning").
 
-Backend
-Node.js & Express: Used to manage API endpoints for dynamic data and resume sections.
-Google OAuth Authentication: Secure sign-in for users to access personalized data or edit sections.
-CRUD Operations: Full functionality for creating, editing, and deleting sections of the resume.
+### **Backend**
+- **Node.js & Express**: Used to manage API endpoints for dynamic data and resume sections.
+- **Google OAuth Authentication**: Secure sign-in for users to access personalized data or edit sections.
+- **CRUD Operations**: Full functionality for creating, editing, and deleting sections of the resume.
 
-Database
-MySQL: Data for storing user details, education, work experience, and projects.
+### **Database**
+- **MySQL**: Data for storing user details, education, work experience, and projects.
 
-## Additional Features
-AI Chatbot: Provides real-time help and assistance in finding specific information or answering questions about the resume.
-Live Weather Updates: Shows weather information dynamically based on the user's location or preferences.
-News Feed: Displays live news updates relevant to the user's interests.
+## **Additional Features**
+- **AI Chatbot**: Provides real-time help and assistance in finding specific information or answering questions about the resume.
+- **Live Weather Updates**: Shows weather information dynamically based on the user's location or preferences.
+- **News Feed**: Displays live news updates relevant to the user's interests.
 
-## Getting Started
-Frontend Setup
-Clone the repository:
+## **Getting Started**
 
-git clone https://github.com/shivas1432/final_project_FE.git
-cd resume/frontend
+### **Frontend Setup**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/shivas1432/final_project_FE.git
+   cd resume/frontend
 
 Install the dependencies:
 
@@ -55,7 +56,8 @@ Start the Node.js server:
 npm start
 
 ## App Features
-Personalized Resume: Shows detailed sections about your skills, work experience, education, and projects.
+## **Personalized Resume**
+Shows detailed sections about your skills, work experience, education, and projects.
 Dynamic Sections: Click to expand or collapse detailed information for each section.
 Live Data Integration:
 Real-time weather updates based on the user's location.
