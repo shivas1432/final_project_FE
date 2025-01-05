@@ -83,7 +83,6 @@ npm start
 - Express
 - Google OAuth
 - MySQL
-- Sequelize ORM
 
 ### **APIs**
 - OpenWeather API (for weather updates)
@@ -99,5 +98,5 @@ npm start
 To clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/resume-builder.git
-cd resume-builder
+git clone https://github.com/shivas1432/final_project_FE.git
+cd resume
