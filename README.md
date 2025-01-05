@@ -1,14 +1,14 @@
-Interactive Resume Application (React, Node.js, MySQL)
+# Interactive Resume Application (React, Node.js, MySQL)
 
-Project Overview
+## Project Overview
 
 This project is an interactive Resume Application built to showcase my personal resume in a dynamic and modern web format. Users can explore my skills, projects, education, experience, and more. The app is built using React for the frontend, Node.js and Express for the backend, and MySQL for data management.
 
 Key Technologies: React, Node.js, Express, MySQL, Google OAuth, AI Chatbot Integration, Live Weather API, News Feed API
 
-Key Features
+## Key Features
 
-Frontend
+ Frontend
 React-based User Interface: Built with React to create a dynamic, smooth user experience.
 Responsive Design: Fully responsive layout to display the resume on various devices.
 Dynamic Theme: Toggle between light and dark modes.
@@ -24,47 +24,37 @@ CRUD Operations: Full functionality for creating, editing, and deleting sections
 Database
 MySQL: Data for storing user details, education, work experience, and projects.
 
-Additional Features
+## Additional Features
 AI Chatbot: Provides real-time help and assistance in finding specific information or answering questions about the resume.
 Live Weather Updates: Shows weather information dynamically based on the user's location or preferences.
 News Feed: Displays live news updates relevant to the user's interests.
 
-Getting Started
+## Getting Started
 Frontend Setup
 Clone the repository:
-bash
-Copy code
+
 git clone https://github.com/shivas1432/final_project_FE.git
 cd resume/frontend
 
 Install the dependencies:
-bash
-Copy code
+
 npm install
 Start the React app:
-bash
-Copy code
 npm start
 
 Visit the app at http://localhost:3000 to see your interactive resume in action.
 
 Backend Setup
 Navigate to the backend folder:
-bash
-Copy code
 cd resume/backend
 
 Install the required dependencies:
-bash
-Copy code
 npm install
 Set up your .env file with the necessary environment variables (such as database credentials, Google OAuth credentials, etc.).
 Start the Node.js server:
-bash
-Copy code
 npm start
 
-App Features
+## App Features
 Personalized Resume: Shows detailed sections about your skills, work experience, education, and projects.
 Dynamic Sections: Click to expand or collapse detailed information for each section.
 Live Data Integration:
@@ -77,7 +67,7 @@ Backend: Node.js, Express, Google OAuth, MySQL, Sequelize ORM
 APIs: OpenWeather API (for weather updates), NewsAPI (for news feed)
 Other: Socket.io (for live updates), AI Chatbot API
 
-How to Contribute
+## How to Contribute
 
 Feel free to fork this repository and make any improvements. To contribute:
 
