@@ -55,26 +55,49 @@ Set up your .env file with the necessary environment variables (such as database
 Start the Node.js server:
 npm start
 
+# Resume Builder with Live Features
+
 ## App Features
-## **Personalized Resume**
-Shows detailed sections about your skills, work experience, education, and projects.
-Dynamic Sections: Click to expand or collapse detailed information for each section.
-Live Data Integration:
-Real-time weather updates based on the user's location.
-Display news feed related to your areas of interest.
-User Authentication: Users can sign in with Google OAuth to edit or interact with certain sections of the resume (if allowed).
-Technologies Used
-Frontend: React, CSS Modules, Axios, React Router
-Backend: Node.js, Express, Google OAuth, MySQL, Sequelize ORM
-APIs: OpenWeather API (for weather updates), NewsAPI (for news feed)
-Other: Socket.io (for live updates), AI Chatbot API
 
-## How to Contribute
+### **Personalized Resume**
+- Displays detailed sections about your skills, work experience, education, and projects.
+- **Dynamic Sections**: Click to expand or collapse detailed information for each section.
+  
+### **Live Data Integration**
+- **Real-time Weather Updates**: Shows weather updates based on the user's location.
+- **News Feed**: Displays news articles related to your areas of interest.
 
-Feel free to fork this repository and make any improvements. To contribute:
+### **User Authentication**
+- Users can sign in with Google OAuth to edit or interact with certain sections of the resume (if allowed).
 
-Fork the repository to your GitHub account.
-Create a new branch for your feature: git checkout -b feature-branch.
-Make your changes and commit them: git commit -m "Describe your change".
-Push to your branch: git push origin feature-branch.
-Create a pull request to submit your changes for review.
+## Technologies Used
+
+### **Frontend**
+- React
+- CSS Modules
+- Axios
+- React Router
+
+### **Backend**
+- Node.js
+- Express
+- Google OAuth
+- MySQL
+- Sequelize ORM
+
+### **APIs**
+- OpenWeather API (for weather updates)
+- NewsAPI (for news feed)
+
+### **Other**
+- Socket.io (for live updates)
+- AI Chatbot API
+
+## How to Run Locally
+
+### 1. **Clone the Repository**
+To clone the repository to your local machine:
+
+```bash
+git clone https://github.com/yourusername/resume-builder.git
+cd resume-builder
