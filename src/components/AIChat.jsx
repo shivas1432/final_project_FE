@@ -7,7 +7,7 @@ function AIChat({ isOpen, onClose }) {
   const [chatHistory, setChatHistory] = useState([]);
   const [loadingChat, setLoadingChat] = useState(false);
   const chatBoxRef = useRef(null);
-  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8081';
+  const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8081';
 
   const handleAskSubmit = async () => {
     if (!userQuestion.trim() || userQuestion.trim().length > 500) {

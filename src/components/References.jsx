@@ -28,7 +28,8 @@ const References = () => {
     for (const key in formData) formDataToSend.append(key, formData[key]);
 
     try {
-      const response = await fetch('http://localhost:8081/api/references', {
+      // Replaced localhost URL with Render server URL
+      const response = await fetch('https://final-project-be-d1bj.onrender.com/api/references', {
         method: 'POST',
         body: formDataToSend,
       });

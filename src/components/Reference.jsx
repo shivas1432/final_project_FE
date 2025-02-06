@@ -23,7 +23,8 @@ const Reference = () => {
 
   const fetchReferences = async () => {
     try {
-      const res = await fetch('http://localhost:8081/api/references');
+      // Replace local URL with Render server URL
+      const res = await fetch('https://final-project-be-d1bj.onrender.com/api/references');
       if (!res.ok) throw new Error('Failed to fetch references');
       setReferences(await res.json());
     } catch (error) {
@@ -36,7 +37,7 @@ const Reference = () => {
   useEffect(() => { fetchReferences(); }, []);
 
   const handleViewLoR = (lorPath) => {
-    setSelectedLoR(`http://localhost:8081/${lorPath}`);
+    setSelectedLoR(`https://final-project-be-d1bj.onrender.com/${lorPath}`);
     setIsModalOpen(true);
   };
 
@@ -53,7 +54,7 @@ const Reference = () => {
           {references.length ? references.map((ref) => (
             <div key={ref.id} className="reference-item">
               <div className="reference-content">
-                <img src={`http://localhost:8081/${ref.image_path || 'noimage.png'}`} alt="Reference" className="reference-image" />
+                <img src={`https://final-project-be-d1bj.onrender.com/${ref.image_path || 'noimage.png'}`} alt="Reference" className="reference-image" />
                 <div className="reference-info">
                   <h3>{ref.name}</h3>
                   <p>Email: {ref.email}</p>
@@ -64,7 +65,7 @@ const Reference = () => {
                   {ref.signature_path && (
                     <div className="reference-signature">
                       <p>Signature:</p>
-                      <img src={`http://localhost:8081/${ref.signature_path}`} alt="Signature" className="signature-image" />
+                      <img src={`https://final-project-be-d1bj.onrender.com/${ref.signature_path}`} alt="Signature" className="signature-image" />
                     </div>
                   )}
                   {ref.lor_path ? (

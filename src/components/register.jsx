@@ -5,7 +5,6 @@ import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 import '../css/login.css';
 
-
 function RegisterPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -15,7 +14,8 @@ function RegisterPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8081/api/register', { name, email, password });
+      // Replaced localhost URL with Render server URL
+      const response = await axios.post('https://final-project-be-d1bj.onrender.com/api/register', { name, email, password });
       console.log('Registration successful:', response.data);
       toast.success('Successfully registered!'); // Show success notification
       navigate('/login'); // Redirect to the login page

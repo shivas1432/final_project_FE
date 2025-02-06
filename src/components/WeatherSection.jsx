@@ -12,7 +12,8 @@ const WeatherSection = ({ guestAccessGranted, user }) => {
   useEffect(() => {
     const fetchUkCities = async () => {
       try {
-        const response = await axios.get('http://localhost:8081/api/uk-cities');
+        // Replaced localhost URL with Render server URL
+        const response = await axios.get('https://final-project-be-d1bj.onrender.com/api/uk-cities');
         setUkCities(response.data);
       } catch (err) {
         setError('Failed to load city data. Please try again.');

@@ -24,7 +24,8 @@ function Navbar({ user, onLogout }) {
   useEffect(() => {
     const fetchUkCities = async () => {
       try {
-        const response = await axios.get('http://localhost:8081/api/uk-cities');
+        // Replace local URL with Render server URL
+        const response = await axios.get('https://final-project-be-d1bj.onrender.com/api/uk-cities');
         setUkCities(response.data);
       } catch (err) {
         setError('Failed to load city data.');
