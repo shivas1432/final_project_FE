@@ -39,7 +39,7 @@
   justify-content: center;
   scroll-snap-align: start;
   text-align: center;
-  padding: 20px;
+  
 }
 
 /* Hero Section */
@@ -61,7 +61,7 @@
 .hero-left {
   flex: 7;
   z-index: 2;
- 
+  
 }
 
 .hero-right {
@@ -81,6 +81,7 @@
   cursor: pointer;
   overflow: hidden;
   border-radius: 20px;
+  
 }
 
 .hero-right .video-container video {
@@ -89,45 +90,6 @@
   height: 550px;
   z-index: 0; /* Keep video behind overlay */
   border-radius: 20px;
-}
-
-
-/* Button Styling */
-.btn-dance {
-  position: absolute;  /* Position the button at the bottom of the container */
-  bottom: 20px;        /* 20px from the bottom */
-  left: 50%;           /* Center it horizontally */
-  transform: translateX(-50%); /* Centering the button */
-  padding: 14px 28px;  /* Increase padding for a better click area */
-  background-color: #ff5733;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;  /* Larger font size for better readability */
-  cursor: pointer;
-  z-index: 2;  /* Ensure the button is above the video and overlay */
-  transition: background-color 0.3s ease; /* Smooth transition for hover */
-}
-
-.btn-dance:hover {
-  background-color: #e04e2b; /* Darken the button on hover */
-}
-
-/* Optional: Make the button more prominent on hover */
-.btn-dance:active {
-  transform: translateX(-50%) scale(0.98); /* Slightly shrink the button on click for effect */
-}
-
-/* Responsive Video Styling for mobile */
-@media (max-width: 768px) {
-  .hero-right .video-container iframe {
-    height: 300px; /* Adjust height for smaller screens */
-  }
-
-  .btn-dance {
-    font-size: 14px;  /* Reduce button text size on mobile */
-    padding: 10px 20px; /* Adjust padding for mobile */
-  }
 }
 
 .hero h1,
@@ -174,7 +136,7 @@
 .about {
   background-color: #f7f7f7;
   color: #ece3e3;
-  padding: 50px 20px;
+ padding: 20px;
   text-align: center;
 }
 
@@ -283,6 +245,7 @@
   color: #fff;
   text-align: center;
   padding: 20px;
+  margin-top: 100px;
 }
 
 .footer p {
@@ -340,7 +303,7 @@
 @media (max-width: 768px) {
   /* Hero Section Adjustments */
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .hero p {
@@ -358,17 +321,6 @@
     font-size: 2rem;
   }
 
-  /* Testimonials Section Adjustments */
-  .testimonials-contact {
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 20px;
-  }
-
-  .testimonial {
-    width: 100%;
-    max-width: 100%;
-  }
 
   /* Guest Access Adjustments */
   .guestname {
@@ -381,7 +333,21 @@
     max-width: 300px;
   }
   .hero-right .video-container video {
-    width: 150px;
-    height: 400px;
+    width: 100px;
+    
+  }
+  .hero-right{
+    flex: 5;
+  }
+ 
+  .projects-container {
+    width: 350px;
+  
+  }
+  .project-item {
+   height: 200px;
+  }
+  .footer{
+    margin-top: 10px;
   }
 }
