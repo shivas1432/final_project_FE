@@ -79,18 +79,9 @@ const HeroSection = ({
           Hi, I'm <span>SHIVASHANKER</span>
         </h1>
         <p>
-          Frontend Developer specialized in creating interactive, user-friendly
-          web applications.
-        </p>
-        <p>
-          I craft responsive designs using HTML, CSS, and JavaScript frameworks
-          like React. My focus is on delivering seamless user experiences that
-          engage and delight users.
-        </p>
-        <p>
-          As a Backend Developer, I build robust server-side applications using
-          Node.js and Express. I ensure data integrity and security while
-          optimizing performance for smooth interactions with the frontend.
+         I'm a Full-Stack Web Developer with experience in React, Node.js, Express, and MySQL, specializing in building responsive, high-performance web applications. 
+          I focus on creating seamless user experiences through clean, secure code and efficient cloud deployments (AWS, GCP). With a strong background in API integrations, authentication, and data analysis, 
+          I'm passionate about solving complex problems and optimizing both front-end and back-end systems to deliver robust, scalable solutions.
         </p>
         {(user || guestAccessGranted) && (
           <div className="cta-buttons">
