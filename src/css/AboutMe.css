@@ -10,7 +10,7 @@
 .brief-container {
   display: flex;
   width: 100%;
-  height: 550px; /* Flexible height for responsiveness */
+  height: 800px; /* Flexible height for responsiveness */
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden; /* Ensures image and content fit within boundaries */
@@ -32,7 +32,7 @@
 }
 
 .brief-content h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #333333;
   margin-bottom: 20px;
@@ -92,12 +92,13 @@
 
 .details-container {
   flex: 1;
-  min-width: 250px;
-  background-color: #f1f1f1;
+  min-width:300px;
+  background-color: #0a0a0a;
   border-radius: 0 10px 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px;
 }
 
 .details-container h2 {
@@ -156,7 +157,7 @@
 }
 
 /* Media Query for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .brief-container {
     flex-direction: column; /* Stack content vertically on smaller screens */
     height: auto; /* Adjust height to content */
@@ -181,6 +182,12 @@
   .map-container {
     height: 300px; /* Smaller map height */
    
+  }
+  .image-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
   }
 
   
