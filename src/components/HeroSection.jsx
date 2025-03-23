@@ -30,7 +30,7 @@ const HeroSection = ({
         style={{ flex: 7, padding: '20px', color: 'white' }}
       >
         <header className="home-header">
-          <h1>Welcome to My Portfolio</h1>
+          <h2>Welcome to My Portfolio</h2>
           {user ? (
             <div className="user-greeting">
               <h2>Hello, {user.name}!</h2>
