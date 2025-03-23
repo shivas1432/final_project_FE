@@ -1,41 +1,35 @@
 .layout {
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .layout-content {
-    flex: 1; /* Take the remaining space */
-    padding: 20px; /* Add padding */
-    overflow-y: auto; /* Allow scrolling if content overflows */
+  flex: 1;
+  overflow-y: auto;
 }
-/* src/css/Layout.css */
 
-/* Default Light Theme Styles */
 .layout-container {
-    background-color: white;
-    color: black;
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-  }
-  
-  /* Dark Theme Styles */
-  .layout-container.dark {
-    background-color: #1e1e1e; /* Dark background */
-    color: white; /* Light text */
-  }
-  
-  /* Additional styles for your button */
-  .theme-toggle {
-    margin: 1rem; /* Add some margin */
-    padding: 0.5rem 1rem; /* Add padding for better clickability */
-    cursor: pointer; /* Pointer cursor on hover */
-    border: none; /* Remove default border */
-    border-radius: 4px; /* Add rounded corners */
-    background-color: #007bff; /* Button background color */
-    color: white; /* Button text color */
-  }
-  
-  .theme-toggle:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-  }
-  
+  background-color: rgb(248, 240, 240);
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.layout-container.dark {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.theme-toggle {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+}
+
+.theme-toggle:hover {
+  background-color: #0056b3;
+}
