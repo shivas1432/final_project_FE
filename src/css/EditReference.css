@@ -9,7 +9,7 @@
     border-radius: 10px;
     margin: auto; /* Center the edit reference section */
     width: 100%;  /* Full width */
-    max-width: 450px; /* Set a max width for better appearance */
+    max-width: 450px; 
   
 }
 
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 400px; /* Max width for the form */
+    max-width: 400px; 
 }
 
 input {
@@ -26,7 +26,7 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
     transition: border 0.3s ease;
-    width: 100%; /* Ensure inputs take full width */
+    width: 100%; 
 }
 
 input:focus {
@@ -77,16 +77,16 @@ input:focus {
 }
 
 .image-preview {
-    margin: 10px 0; /* Add margin for spacing */
+    margin: 10px 0; 
     max-width: 100%; /* Responsive */
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
 }
 
 
 
 .delete-button {
     padding: 10px;
-    background-color: #dc3545; /* Bootstrap danger color */
+    background-color: #dc3545; 
     color: white;
     border: none;
     border-radius: 5px;
