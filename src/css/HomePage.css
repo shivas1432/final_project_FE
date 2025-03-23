@@ -189,28 +189,28 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   background-color: #ece3e3;
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  justify-content: space-between; /* Ensure h3 stays at the bottom */
-  align-items: flex-start; /* Align items to the start horizontally */
-  background-size: cover; /* Make image cover the entire container */
-  background-position: center; /* Center the image */
-  position: relative; /* Needed for placing text over the image */
-  overflow: hidden; /* Hide overflow if image goes beyond container */
+  flex-direction: column; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  background-size: cover; 
+  background-position: center; 
+  position: relative; 
+  overflow: hidden; 
 }
 
 .project-item h3 {
   font-size: 1.5rem;
-  margin: 0; /* Remove margin to position it flush at the bottom */
-  z-index: 2; /* Ensure text stays above the background image */
-  color: white; /* Ensure text is readable on top of the image */
-  position: absolute; /* Position text at the bottom */
+  margin: 0; 
+  z-index: 2; 
+  color: white; 
+  position: absolute; 
   bottom: 20px;
   left: 20px;
 }
 
 .project-item p {
   font-size: 1rem;
-  color: #333; /* Adjust text color to make it visible on the light background */
+  color: #333;
 }
 
 .project-item a {
