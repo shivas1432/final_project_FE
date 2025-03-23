@@ -5,7 +5,7 @@
     left: 30%;
     width: 650px;
     max-height: 600px;
-    background-color: #faf9f9;
+    background-color: #5c5656;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -88,7 +88,7 @@
   .ai-chat-textarea {
     width: 100%;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #746a6a;
     border-radius: 5px;
     padding: 10px;
     resize: none;
@@ -104,7 +104,7 @@
   }
   
   .ai-chat-submit-btn:disabled {
-    background-color: #ccc;
+    background-color: #489c6d;
   }
   
   @keyframes fadeIn {
@@ -117,4 +117,55 @@
       transform: scale(1);
     }
   }
-  
+  @media (max-width: 768px) {
+    .ai-chat-box-popup {
+        width: 90%;
+        left: 50%;
+       top: 35%;
+        transform: translate(-50%, -50%);
+        max-height: 80vh;
+        height: auto;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .ai-chat-box-content {
+        padding: 15px;
+    }
+
+    .ai-chat-title {
+        font-size: 16px;
+    }
+
+    .ai-chat-close-btn {
+        font-size: 16px;
+        top: 8px;
+        right: 8px;
+    }
+
+    .ai-chat-history {
+        max-height: 250px;
+        padding: 5px 0;
+    }
+
+    .ai-chat-text {
+        font-size: 14px;
+        padding: 8px;
+        max-width: 85%;
+    }
+
+    .ai-chat-avatar img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .ai-chat-textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .ai-chat-submit-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
