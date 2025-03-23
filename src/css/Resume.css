@@ -1,14 +1,47 @@
 .resume {
-    
-    text-align: center;
-  }
-  
-  .resume h1 {
-    color: #fbc02d;
-  }
-  
-  .resume p {
-    font-size: 18px;
-    color: #ff8f00;
-  }
-  
+  text-align: center;
+  padding: 50px 20px;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.resume h1 {
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.resume p {
+  font-size: 18px;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.resume a {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.resume a:hover {
+  color: #0056b3;
+}
+
+.resume a svg {
+  margin-left: 8px;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.resume a:hover svg {
+  transform: translateX(5px);
+}
