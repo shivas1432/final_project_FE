@@ -305,6 +305,11 @@
   .hero h1 {
     font-size: 2rem;
   }
+   .hero{
+   
+   height: auto;
+
+  }
 
   .hero p {
     font-size: 1rem;
