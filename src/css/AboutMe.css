@@ -13,13 +13,13 @@
   height: 800px; /* Flexible height for responsiveness */
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Ensures image and content fit within boundaries */
+  overflow: hidden; 
   
 }
 
 .brief-content {
   flex: 1;
-  min-width: 300px; /* Ensures layout integrity on small screens */
+  min-width: 300px; 
   padding: 30px;
   border-radius: 10px 0 0 10px;
 }
@@ -42,7 +42,7 @@
   font-size: 1.1rem;
   color: #555;
   margin-bottom: 15px;
-  text-align: justify; /* Aligns text for readability */
+  text-align: justify; 
   line-height: 1.6;
 }
 
@@ -68,13 +68,13 @@
 }
 
 .image-container img:hover {
-  transform: scale(1.05); /* Subtle zoom on hover */
+  transform: scale(1.05); 
 }
 
 /* Map and Details Container */
 .map-details-container {
   display: flex;
-  flex-wrap: wrap; /* Ensures responsiveness */
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -83,8 +83,8 @@
 }
 
 .map-container {
-  flex: 2; /* Takes more space */
-  min-width: 300px; /* Ensures responsiveness */
+  flex: 2;
+  min-width: 300px; 
   height: 400px; /* Default height for map */
   border-radius: 10px 0 0 10px;
   overflow: hidden;
@@ -118,7 +118,7 @@
 .locations {
   display: flex;
   gap: 15px;
-  flex-wrap: wrap; /* Ensures the buttons wrap on smaller screens */
+  flex-wrap: wrap; 
   justify-content: center; /* Center aligns the buttons */
   margin-top: 20px;
 }
@@ -156,27 +156,27 @@
   background-color: #0056b3;
 }
 
-/* Media Query for Responsiveness */
+
 @media (max-width: 1200px) {
   .brief-container {
     flex-direction: column; /* Stack content vertically on smaller screens */
-    height: auto; /* Adjust height to content */
+    height: auto;
   }
 
   .brief-content {
-    border-radius: 10px; /* Remove left-side border radius for stacked layout */
+    border-radius: 10px; 
     text-align: center; /* Center-align content */
   }
 
   .image-container {
-    max-width: 100%; /* Allow image to take full width */
+    max-width: 100%; 
     height: auto; /* Auto-adjust height */
     border-radius: 10px; /* Uniform border-radius */
   }
 
   .map-details-container {
    
-    height: auto; /* Adjust height */
+    height: auto; 
   }
 
   .map-container {
