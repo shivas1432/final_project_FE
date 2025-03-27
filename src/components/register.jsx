@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'; 
-import { toast } from 'react-toastify';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { toast } from 'react-toastify'; 
+import { Link } from 'react-router-dom'; // Import Link for navigation
 import '../css/login.css';
+
 
 function RegisterPage() {
   const [email, setEmail] = useState('');
@@ -14,7 +15,6 @@ function RegisterPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      
       const response = await axios.post('https://final-project-be-d1bj.onrender.com/api/register', { name, email, password });
       console.log('Registration successful:', response.data);
       toast.success('Successfully registered!'); // Show success notification
