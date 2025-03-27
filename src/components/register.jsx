@@ -14,7 +14,7 @@ function RegisterPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Replaced localhost URL with Render server URL
+      
       const response = await axios.post('https://final-project-be-d1bj.onrender.com/api/register', { name, email, password });
       console.log('Registration successful:', response.data);
       toast.success('Successfully registered!'); // Show success notification
